@@ -9,9 +9,12 @@ const FormSite = () => {
     type: "",
     message: "",
   });
+  const inputFieldsObject = Object.fromEntries(
+    inputFields.map((field) => [field.name, ""])
+  );
   return (
     <Formik
-      initialValues={{ firstName: "", lastName: "", email: "" }}
+      initialValues={inputFieldsObject}
       validationSchema={validator.validationSchema}
       onSubmit={(values, { resetForm }) => {
         alert(JSON.stringify(values, null, 2));
