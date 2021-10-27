@@ -1,12 +1,11 @@
-import Home from './components/Home';
+import Layout from './layout/Layout';
 
 import './App.scss';
 
 function App() {
   return (
-    <div className="container">
-      <h1>Hello react</h1>
-      <Home />
+    <div className="site-container">
+      <Layout />
     </div>
   );
 }

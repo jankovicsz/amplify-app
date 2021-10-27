@@ -6,9 +6,36 @@
   box-sizing: border-box;
 }
 
-.container {
+.site-container {
   margin: 0 auto;
   display: flex;
   flex-direction: column;
+  align-items: stretch;
+  width: 100vw;
+}
+
+main {
+  display: flex;
+  flex-direction: column;
   align-items: flex-start;
+  margin: 0 auto;
+  width: 60vw;
+  max-width: 800px;
+}
+
+form {
+  display: flex;
+  flex-direction: column;
+  align-items: flex-start;
+  width: 100%;
+}
+
+input {
+  align-self: stretch;
+}
+
+footer {
+  display: flex;
+  flex-direction: row;
+  justify-content: center;
 }
