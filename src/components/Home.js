@@ -1,11 +1,11 @@
 import React from "react";
-import InputFields from "./InputFields";
+import FormSite from "./FormSite";
 
 const Home = () => {
   return (
     <>
       <h1 className="my-4">Home</h1>
-      <InputFields />
+      <FormSite />
     </>
   );
 };
